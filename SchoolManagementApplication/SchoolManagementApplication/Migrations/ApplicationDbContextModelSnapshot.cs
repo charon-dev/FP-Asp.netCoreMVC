@@ -41,7 +41,7 @@ namespace SchoolManagementApplication.Migrations
 
                     b.HasIndex("CodeSector");
 
-                    b.ToTable("modules");
+                    b.ToTable("modules", (string)null);
                 });
 
             modelBuilder.Entity("SchoolManagementApplication.Models.Sector", b =>
@@ -55,7 +55,7 @@ namespace SchoolManagementApplication.Migrations
 
                     b.HasKey("Code");
 
-                    b.ToTable("sectors");
+                    b.ToTable("sectors", (string)null);
                 });
 
             modelBuilder.Entity("SchoolManagementApplication.Models.Student", b =>
@@ -85,7 +85,7 @@ namespace SchoolManagementApplication.Migrations
 
                     b.HasIndex("CodeSector");
 
-                    b.ToTable("students");
+                    b.ToTable("students", (string)null);
                 });
 
             modelBuilder.Entity("SchoolManagementApplication.Models.Module", b =>

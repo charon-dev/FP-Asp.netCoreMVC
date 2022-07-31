@@ -1,8 +1,209 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+﻿<div class="container1 w-100 m-auto">
+    <div class="swiper mySwiper ">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="/Images/Logo2.png" class="img-fluide" alt="..."></div>
+        <div class="swiper-slide"><img src="/Images/Code.jpg" class="img-fluide" alt="..."></div>
+        <div class="swiper-slide"><img src="/Images/reseau.jpg" class="img-fluide" alt="..."></div>
+      </div>
+      <div class="swiper-scrollbar"></div>
+    </div>
 </div>
+<div class="container">
+ @*Intro Part*@
+  <div class="row p-3">
+      <div class="col-md-8">
+          <h2>title</h2>
+          <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              <br />
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+              when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              <br />
+              It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+              essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+              Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
+              versions of Lorem Ipsum.
+              It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+              essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+              Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including.
+          </p>
+      </div>
+      <div class="col-md-4">
+         <img class="img-fluid"src="/Images/devlopment.png">
+      </div>
+  </div>
+   @*school's benefits Part*@
+  <div class="row p-4">
+      <h2 class="mb-3">What our shool offers ?</h2>
+      <div class="row">
+          <span class="col-1"></span>
+          <div class="col-lg-5 row border border-primary mt-2">
+              <img class="img-fluid col-4" src="/Images/Ocourse01.jpg">
+              <p class="col-8">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+              when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+          <span class="col-1 px-1"></span>
+          <div class="col-lg-5 row border border-primary mt-2">
+              <img class="col-4 img-fluid" src="/Images/Ocourse02.png">
+              <p class="col-8">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+              when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+      </div>
+      <div class="row">
+          <span class="col-12 my-3"></span>
+      </div>
+      <div class="row">
+          <span class="col-1"></span>
+          <div class="col-lg-5 row border border-primary mt-2">
+              <img class="img-fluid col-4" src="/Images/Ocourse03.jpg">
+              <p class="col-8">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+              when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+          <span class="col-1 px-1"></span>
+          <div class="col-lg-5 row border border-primary mt-2">
+              <img class="col-4 img-fluid" src="/Images/Ocourse04.jpg">
+              <p class="col-8">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+              when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+      </div>
+  </div> 
+</div>
+   @*Instructors Part*@
+  <div class="row mt-3 p-5" style="background-color:#eee">
+      <h2 class="mb-2 my-4">School's instructors :</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="~/Images/male1.jpg " class="img-fluid rounded-circle"/>
+                <br />
+                <h4 class="text-center">Adam Willis</h4>
+                <p class="text-center">Web developer</p>
+            </div>
+            <div class="col-4">
+                <img src="~/Images/female1.jpg" class="img-fluid rounded-circle"/>
+                <br />
+                <h4 class="text-center">Mina Ferguson</h4>
+                <p class="text-center">Data analyst</p>
+            </div>
+            <div class="col-4">
+                <img src="~/Images/male2.jpg" class="img-fluid rounded-circle"/>
+                <br />
+                <h4 class="text-center">Declan Romero</h4>
+                <p class="text-center">Mobile developer</p>
+            </div>
+      </div>
+      <div class="row">
+            <div class="col-4">
+                <img src="~/Images/male3.jpg " class="img-fluid rounded-circle"/>
+                <br />
+                <h4 class="text-center">Sami Nguyen</h4>
+                <p class="text-center">computer network engineer</p>
+            </div>
+            <div class="col-4">
+                <img src="~/Images/female2.jpg " class="img-fluid rounded-circle"/>
+                <br />
+                <h4 class="text-center">Shannon Griffin</h4>
+                <p class="text-center">Desktop application developer</p>
+            </div>
+            <div class="col-4">
+                <img src="~/Images/female3.jpg " class="img-fluid rounded-circle"/>
+                <br />
+                <h4 class="text-center">Dorcas O'Moore</h4>
+                <p class="text-center">xxxxxxx</p>
+            </div>
+      </div> 
+        
+  </div>
+<div class="container">
+
+
+   @*Students Part*@
+  <div class="row my-3">
+      <h2>What students say about our courses :</h2>
+      <div class="row my-3">
+          <div class="col-2">
+              <img src="~/Images/Anna Shilov.jpg" class="img-fluid rounded-circle"/>
+          </div>
+          <div class="col">
+              <p>              
+                "Thank you ! Using your courses I was able to finish my C# MVC – web applications 
+                developer certifications! And this gave me an opportunity to work for a fantastic 
+                start-up! I am a full-stack developer and I come back to discover new techniques all the time. 
+                Again thank you!"
+              </p>
+              <br />
+              <h5>- Anna Shilova</h5>
+          </div>
+      </div>
+      <div class="row my-3">
+          <div class="col-2 ">
+              <img src="~/Images/testimonial2.jpg" class="img-fluid rounded-circle"/>
+          </div>
+          <div class="col">
+              <p>              
+                "Thanks a lot. I was able to land my first job as a ASP.NET Developer. I simply watched your 
+                ASP.NET MVC and Entity Framework courses and fell in love with them. I explained the same practices 
+                and techniques that you show and was hired immediately. Thanks a lot again."
+              </p>
+              <br />
+              <h5>- Turab Naveed</h5>
+          </div>
+      </div>
+      <div class="row my-3">
+          <div class="col-2 ">
+              <img src="~/Images/irene-strong2.jpg" class="img-fluid rounded-circle"/>
+          </div>
+          <div class="col">
+              <p>              
+                "Professionally structured, carefully planned courses. Passionate, engaging instructor with 
+                great communication skills. Best courses I've ever had so far."
+              </p>
+              <br />
+              <h5>- Istvan Voros</h5>
+          </div>
+      </div>
+  </div>
+</div>
+ @*Payement Part*@
+  <div class="row h-100 d-flex align-items-center justify-content-center mt-4" style="background-color:#EEE" >
+      <h3 class="text-center mt-5">Join 64127 happy students!</h3>
+      <p class="text-center">With our amazing reviews and money back guarantee, what are you waiting for?</p>
+      <div class="row h-100 d-flex align-items-center justify-content-center">
+          <div class="card border-info col-md-6 m-5" style="max-width: 20rem;">                
+                <div class="card-body text-center">
+                    <p class="text-center fw-bold w-100 mt-1">
+                    Single Course Payment
+                </p>
+                  <p>You can choose any course any own it forever!</p>
+                  <h2 class="card-title">$15 <small><del>$149</del></small></h2>
+                  <strong class="mb-3">Limited time at this price</strong>
+                  <br />
+                  <a href="#" class="badge rounded-pill bg-info" style="width:100px;height:30px;text-decoration:none">Buy Now</a>        
+                </div>
+          </div>
+           <div class="card border-info col-md-6 m-5" style="max-width: 20rem;height:260px">                
+                <div class="card-body text-center">
+                    <p class="text-center fw-bold w-100 my-2">
+                    All-Access Membership
+                </p>
+                  <p>All the existing and future courses</p>
+                  <h2 class="card-title mb-2">$29/mo</h2>
+                  <strong class="mb-1">Cancel any time</strong>
+                  <br />
+                  <a href="#" class="badge rounded-pill bg-info mt-4"  style="width:100px;height:30px;text-decoration:none">Buy Now</a>        
+                </div>
+           </div>
+      </div>    
+  </div>
+
+ <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        scrollbar: {
+          el: ".swiper-scrollbar",
+          hide: true,
+        },
+      });
+    </script>

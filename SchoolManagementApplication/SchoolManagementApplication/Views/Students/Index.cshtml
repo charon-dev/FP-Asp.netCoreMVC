@@ -3,16 +3,17 @@
 @{
     ViewData["Title"] = "Index";
 }
-<div class="row ">
+<div class="container">
+    <div class="row ">
     <div class="col-6">
         <h1>Students list</h1>
     </div>
-    <div class="col-6 text-end">
+@*    <div class="col-6 text-end">
         <a asp-action="Create" class="btn btn-primary">
        <i class="bi bi-plus-circle-fill"></i>
         Create New Student
     </a>
-    </div>
+    </div>*@
 </div>
 
 
@@ -49,15 +50,16 @@
             <td>
                 @Html.DisplayFor(modelItem => item.CodeSector)
             </td>
-            <td>
+@*            <td>
                 <a class="btn btn-warning mx-2" asp-action="Edit" asp-route-id="@item.Id">
                    <i class="bi bi-pencil-square"></i> Edit
                 </a>
                 <a class="btn btn-danger mx-2" asp-action="Delete" asp-route-id="@item.Id">
                    <i class="bi bi-trash3"></i> Delete
                 </a>
-            </td>
+            </td>*@
         </tr>
 }
     </tbody>
 </table>
+</div>

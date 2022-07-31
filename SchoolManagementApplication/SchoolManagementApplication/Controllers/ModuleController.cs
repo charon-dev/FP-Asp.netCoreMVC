@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using SchoolManagementApplication.Data;
 using SchoolManagementApplication.Models;
 
@@ -19,6 +20,7 @@ namespace SchoolManagementApplication.Controllers
         //GET
         public IActionResult Create()
         {
+            ViewData["CodeSector"] = new SelectList(_db.sectors, "Code", "Code");
             return View();
         }
         //SET
