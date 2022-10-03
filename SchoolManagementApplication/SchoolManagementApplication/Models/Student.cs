@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -19,6 +20,7 @@ namespace SchoolManagementApplication.Models
         public int Age { get; set; }
         public string CodeSector { get; set; }
         [ForeignKey("CodeSector")]
+        [ValidateNever]
         public Sector Sector { get; set; }
     }
 }
